@@ -267,14 +267,14 @@ ul, ol {
 
 
 @media only screen and (min-width: 1200px){
-
+/*Arreglar*/
   #contenedor {
     width:100%;
     margin: 0 auto 0 auto;
   }
   
   #cabecera {
-    width: 98.75%;
+    width: 98.60%;
     position: relative;
     height: 100px;
     margin: 0;
@@ -302,7 +302,10 @@ ul, ol {
   }
 
   #contenido #secundario{
-    border-bottom:  #CEDBF9 solid 1000px;
+    border-bottom:  #CEDBF9 solid 700px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 
   #contenido img{
@@ -337,10 +340,13 @@ ul, ol {
     display:inline-block;
   }
 
+  #contenido{
+    border-bottom-right-radius: 20px;
+  }
 
   #menu{
-    margin-left: 10px;
-    margin-right: 30px;
+    margin-left: 0.6%;
+    margin-right: 2%;
   }
 
   #menu ul li a{
@@ -361,6 +367,15 @@ ul, ol {
     height: 100px;
     margin: 0;
     padding: 0;
-    background-size: cover;
+    background: none;
+  }
+
+  @media only screen and (max-width: 400px){
+
+    #secundario {
+      display:none;
+      position:absolute;
+    }
+
   }
 }
