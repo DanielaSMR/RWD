@@ -266,7 +266,7 @@ ul, ol {
 }
 
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1300px){
 /*Arreglar*/
   #contenedor {
     width:100%;
@@ -285,27 +285,24 @@ ul, ol {
 
   #contenido{
     width: 97.4%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.6%;
+    margin-right: 0.6%;
+    border-bottom-right-radius: 1%;
   }
 
   #contenido #principal{
     position: relative;
     display:inline-block;
-    width: 84.6%;
-
+    width: 82%;
   }
 
   #contenido #secundario{
+    border-bottom:  #CEDBF9 solid 650px;
+    border-top-right-radius: 1.5%;
+    border-bottom-left-radius: 1.5%;
+    border-bottom-right-radius: 1.5%;
     position: relative;
     display: inline-block;
-  }
-
-  #contenido #secundario{
-    border-bottom:  #CEDBF9 solid 700px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
   }
 
   #contenido img{
@@ -321,14 +318,14 @@ ul, ol {
 
   #contenido .articulo {
     clear: both;
-    margin: 0;
-    padding: 20px;
+    margin: 0%;
+    padding: 1.5%;
     background: url("../imagenes/fondo_articulo.jpg") no-repeat;
     background-size: 100% 80%;
   }
   
   #contenido .articulo h2 {
-    margin: 0 -20px;
+    margin: 0 -1.5%;
     padding: 10px;
     background: #DEE5FD;
     color: #192666;
@@ -340,9 +337,6 @@ ul, ol {
     display:inline-block;
   }
 
-  #contenido{
-    border-bottom-right-radius: 20px;
-  }
 
   #menu{
     margin-left: 0.6%;
@@ -352,7 +346,7 @@ ul, ol {
   #menu ul li a{
       display: inline-block;
       position: relative;
-      padding: 5px 15px;
+      padding: 2.5px 10px;
       border: 0;
       background: #253575;
       color: #B5C4E3;
@@ -363,19 +357,13 @@ ul, ol {
 
   #pie{
     width: 98.75%;
-    position: relative;
-    height: 100px;
-    margin: 0;
-    padding: 0;
     background: none;
   }
 
-  @media only screen and (max-width: 400px){
-
-    #secundario {
-      display:none;
-      position:absolute;
+  @media only screen and (max-width: 768px) {
+    #pie {
+        display: none;
     }
-
+    
   }
 }
